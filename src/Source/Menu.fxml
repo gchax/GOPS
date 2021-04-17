@@ -3,17 +3,46 @@
 <?import javafx.geometry.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1"
+<AnchorPane prefHeight="700.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/11.0.1"
             xmlns:fx="http://javafx.com/fxml/1" fx:controller="Source.Controller">
-   <VBox layoutX="250.0" layoutY="165.0" prefHeight="200.0" prefWidth="100.0">
-      <Button fx:id="startButton" mnemonicParsing="false" onAction="#pressStart" text="Start"/>
-      <Button fx:id="tutorialButton" mnemonicParsing="false" onAction="#pressTutorial" text="Tutorial"/>
-      <Button fx:id="scoreButton" mnemonicParsing="false" onAction="#pressScore" text="Score"/>
-      <Button fx:id="exitButton" mnemonicParsing="false" onAction="#pressExit" text="Exit">
-         <VBox.margin>
-            <Insets/>
-         </VBox.margin>
-      </Button>
-   </VBox>
+    <VBox alignment="CENTER" layoutX="375.0" layoutY="226.0" minHeight="350.0" prefHeight="172.0" prefWidth="250.0">
+        <Button fx:id="startButton" alignment="CENTER" defaultButton="true" mnemonicParsing="false"
+                onAction="#pressStart" prefHeight="60.0" prefWidth="120.0" text="Start" textOverrun="CLIP">
+            <VBox.margin>
+                <Insets bottom="20.0"/>
+            </VBox.margin>
+            <font>
+                <Font name="Ink Free" size="24.0"/>
+            </font>
+        </Button>
+        <Button fx:id="tutorialButton" mnemonicParsing="false" onAction="#pressTutorial" prefHeight="60.0"
+                prefWidth="120.0" text="Tutorial">
+            <VBox.margin>
+                <Insets bottom="20.0"/>
+            </VBox.margin>
+            <font>
+                <Font name="Ink Free" size="24.0"/>
+            </font>
+        </Button>
+        <Button fx:id="scoreButton" mnemonicParsing="false" onAction="#pressScore" prefHeight="60.0" prefWidth="120.0"
+                text="Score">
+            <VBox.margin>
+                <Insets bottom="20.0"/>
+            </VBox.margin>
+            <font>
+                <Font name="Ink Free" size="24.0"/>
+            </font>
+        </Button>
+        <Button fx:id="exitButton" mnemonicParsing="false" onAction="#pressExit" prefHeight="60.0" prefWidth="120.0"
+                text="Exit">
+            <VBox.margin>
+                <Insets/>
+            </VBox.margin>
+            <font>
+                <Font name="Ink Free" size="24.0"/>
+            </font>
+        </Button>
+    </VBox>
 </AnchorPane>

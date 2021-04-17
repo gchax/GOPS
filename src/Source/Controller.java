@@ -19,7 +19,7 @@ public class Controller {
     public void pressStart() throws IOException {
         Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("Game.fxml")));
         Stage window = (Stage) startButton.getScene().getWindow();
-        window.setScene(new Scene(root, 600, 400));
+        window.setScene(new Scene(root, 1000, 700));
     }
 
     public void pressTutorial() {

@@ -14,7 +14,7 @@ public class Main extends Application {
     public void start(Stage window) throws Exception {
         Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("Menu.fxml")));
         window.setTitle("Hello World");
-        window.setScene(new Scene(root, 600, 400));
+        window.setScene(new Scene(root, 1000, 700));
         window.show();
     }
 
